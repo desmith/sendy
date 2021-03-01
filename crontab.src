@@ -14,5 +14,7 @@ MAILTO="kronjobs10801@gmail.com"
 */1 * * * * php /var/www/sendy.iskconnews.org/autoresponders.php
 
 # sendy send weekly newsletter each Sunday @2pm IST (India)
-# disable until it's working again...
-#30 8 * * 0  /var/www/iskconnews.org/rss2email/sendy_send.sh<Paste>
+# (server is usually set to GMT)
+#30 8 * * 0  /var/www/iskconnews.org/rss2email/sendy_send.sh
+30 8 * * 0  /home/ec2-user/rss2email/sendy_send.sh
+
