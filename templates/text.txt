@@ -1,0 +1,23 @@
+# {{ feed.title }}
+
+## {{ feed.subtitle_detail.value }}
+{% for entry in entries %}
+Title: {{ entry.title }}
+Date: {{ entry.published }}
+{{ entry.summary_detail.value }}
+
+{% endfor %}
+
+============================================================
+Copyright ©2020 ISKCON Communications International, All rights reserved.
+
+You are receiving this email because you opted in for updates
+and announcements on our website at https://iskconnews.org.
+
+Our mailing address is:
+ISKCON Communications
+10310 Oaklyn Drive
+Potomac, MD 20854
+editor@iskconnews.org
+
+** unsubscribe from this list [unsubscribe]

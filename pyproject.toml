@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "rss2email"
+version = "0.1.0"
+description = ""
+authors = ["Dave E Smith <desmith@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Jinja2 = "^2.11.3"
+python-dotenv = "^0.15.0"
+urllib3 = "^1.26.3"
+MarkupSafe = "^1.1.1"
+requests = "^2.25.1"
+setuptools = "^53.1.0"
+feedparser = "^6.0.2"
+
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

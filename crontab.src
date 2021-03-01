@@ -1,0 +1,18 @@
+MAILTO="kronjobs10801@gmail.com"
+
+# +---------------- minute (0 - 59)
+# |  +------------- hour (0 - 23)
+# |  |  +---------- day of month (1 - 31)
+# |  |  |  +------- month (1 - 12)
+# |  |  |  |  +---- day of week (0 - 6) (Sunday=0 or 7)
+# |  |  |  |  |
+# *  *  *  *  *  command to be executed
+# sendy maintenance (keep this running)
+*/5 * * * * php /var/www/sendy.iskconnews.org/scheduled.php > /dev/null 2>&1
+
+# check the database for any autoresponder emails to send
+*/1 * * * * php /var/www/sendy.iskconnews.org/autoresponders.php
+
+# sendy send weekly newsletter each Sunday @2pm IST (India)
+# disable until it's working again...
+#30 8 * * 0  /var/www/iskconnews.org/rss2email/sendy_send.sh<Paste>
